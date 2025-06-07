@@ -14,9 +14,10 @@ const WordCard = ({ word, translation, image, note, definition }) => {
         <img
           src={image}
           alt={word}
+          loading="eager" // Tezroq yuklash uchun
           onError={(e) => {
             e.target.onerror = null; // prevent infinite loop if placeholder also fails
-            e.target.src = `https://placehold.co/120x80?text=${encodeURIComponent(word)}`;
+            e.target.src = `https://placehold.co/600x400/fff/234`;
           }}
           className="object-contain h-full max-w-full"
         />
