@@ -8,15 +8,16 @@ const App = () => {
   const [query, setQuery] = useState("");
 
   const filteredWords = dictionary.filter((item) =>
-    item.word.toLowerCase().includes(query.toLowerCase())
+    item.word.toLowerCase().includes(query.toLowerCase()) ||
+    item.translation.toLowerCase().includes(query.toLowerCase())
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-4xl font-bold text-center text-blue-700 mb-6">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-white to-green-100 p-6">
+      <h1 className="text-5xl font-extrabold text-center text-primary drop-shadow-sm mb-8">
         Ruscha-O'zbekcha Lug'at
       </h1>
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <SearchBar query={query} setQuery={setQuery} />
         <WordList words={filteredWords} />
       </div>
@@ -25,3 +26,4 @@ const App = () => {
 };
 
 export default App;
+
