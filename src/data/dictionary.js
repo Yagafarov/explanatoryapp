@@ -46,7 +46,7 @@ const dictionary = [
     translation: "Qovun sayli",
     image: "",
     definition: "Hosildorlik bayrami",
-    lang: "ru"
+    lang: "uz"
   },
   {
     id: 7,
@@ -54,7 +54,7 @@ const dictionary = [
     translation: "Karnay",
     image: "",
     definition: "Xalq musiqa asbobi",
-    lang: "ru"
+    lang: "uz"
   },
   {
     id: 8,
