@@ -8,9 +8,9 @@ const flags = {
   // Qo'shimcha tillar va bayroqlarni qo'shishingiz mumkin
 };
 
-const WordCard = ({ word, translation, image, note, definition, lang }) => {
+const WordCard = ({ word, translation, image, definition, lang }) => {
   const speak = () => {
-    const utterance = new SpeechSynthesisUtterance(word);
+    const utterance = new SpeechSynthesisUtterance(definition);
     utterance.lang = lang; // Tilda talaffuz qilish
     window.speechSynthesis.speak(utterance);
   };
