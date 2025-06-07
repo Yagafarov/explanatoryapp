@@ -10,10 +10,20 @@ const flags = {
 
 const WordCard = ({ word, translation, image, note, definition, lang }) => {
   const speak = () => {
-    const utterance = new SpeechSynthesisUtterance(lang === 'uz' ? translation : word);
-    utterance.lang = lang; // Tilda talaffuz qilish
-    window.speechSynthesis.speak(utterance);
-  };
+  const utterance = new SpeechSynthesisUtterance(lang === 'uz' ? translation : word);
+  utterance.lang = lang;
+
+  // Ovozlar ro'yxatini olish
+  const voices = window.speechSynthesis.getVoices();
+  const uzbekVoice = voices.find(voice => voice.lang === 'uz-UZ'); // O'zbekcha ovoz
+
+  if (uzbekVoice) {
+    utterance.voice = uzbekVoice; // O'zbekcha ovozni tanlang
+  }
+
+  window.speechSynthesis.speak(utterance);
+};
+
 
   return (
     <div className="relative bg-gradient-to-br from-white via-neutral-50 to-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transform hover:scale-[1.03] transition-all duration-300 ease-in-out overflow-hidden">
