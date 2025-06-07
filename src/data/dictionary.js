@@ -3,7 +3,7 @@ const dictionary = [
   {
     word: "Привет",
     translation: "Salom",
-    image: "https://media.istockphoto.com/id/1148738497/vector/vector-deaf-mute-sign-language-character-gesture.jpg?s=612x612&w=0&k=20&c=9Ar2DqdQocMmHISyaI95KyWIKIs8xaJy2taNIHx7f3U=",
+    image: "https://media.istockphoo.com/id/1148738497/vector/vector-deaf-mute-sign-language-character-gesture.jpg?s=612x612&w=0&k=20&c=9Ar2DqdQocMmHISyaI95KyWIKIs8xaJy2taNIHx7f3U=",
     definition: "Salom berish uchun ishlatiladigan so'z."
   },
   {
