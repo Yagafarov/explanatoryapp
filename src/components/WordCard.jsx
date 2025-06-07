@@ -1,4 +1,6 @@
 import React from "react";
+import { Volume2 } from "lucide-react"; // lucide-react orqali ikonka
+// npm i lucide-react
 
 const WordCard = ({ word, translation, image, note, definition }) => {
   const speak = () => {
@@ -8,20 +10,37 @@ const WordCard = ({ word, translation, image, note, definition }) => {
   };
 
   return (
-    <div className="relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transform hover:scale-[1.02] transition duration-300 overflow-hidden">
-      <img src={image} alt={word} className="w-full h-48 object-cover rounded-t-3xl" />
-      <div className="p-5">
-        <div className="flex items-center justify-between mb-3">
-          <h2 className="text-2xl font-semibold text-gray-800">{word}</h2>
+    <div className="relative bg-gradient-to-br from-white via-neutral-50 to-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transform hover:scale-[1.03] transition-all duration-300 ease-in-out overflow-hidden">
+      <div className="w-full h-52 bg-white flex items-center justify-center overflow-hidden">
+        <img
+        src={image}
+        alt={word}
+        className="object-contain h-full max-w-full"
+      />
+      </div>
+      <div className="p-6 space-y-2">
+        <div className="flex items-center justify-between">
+          <h2 className="text-2xl font-bold text-gray-900">{word}</h2>
           <button
             onClick={speak}
-            className="bg-primary text-white px-3 py-1 rounded-full hover:bg-indigo-600 shadow"
+            aria-label="Listen to pronunciation"
+            className="bg-primary text-indigo-600 hover:bg-indigo-600 hover:text-white p-2 rounded-full shadow-md transition hover:scale-105"
           >
-            🔊</button>
+            <Volume2 className="w-5 h-5" />
+          </button>
         </div>
-        <p className="text-lg text-accent font-medium mb-2">{translation}</p>
-        {definition && <p className="text-sm text-gray-700 mb-1">{definition}</p>}
-        {note && <p className="text-xs text-gray-500 italic">{note}</p>}
+
+        <p className="text-lg text-indigo-600 font-medium">{translation}</p>
+
+        {definition && (
+          <p className="text-sm text-gray-700 leading-snug">{definition}</p>
+        )}
+
+        {note && (
+          <p className="text-xs text-gray-500 italic border-l-4 border-gray-300 pl-3">
+            {note}
+          </p>
+        )}
       </div>
     </div>
   );
