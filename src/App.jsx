@@ -126,7 +126,7 @@ const App = () => {
                                 <div className="grid grid-cols-2 gap-3 text-center">
                                     {/* Card 1 */}
                                     <div className="bg-white rounded-lg p-2 shadow-sm border border-indigo-100">
-                                        <span className="text-2xl font-bold text-indigo-600 leading-tight">250+</span>
+                                        {dictionary.length.toLocaleString()}+
                                         <p className="text-xs text-gray-700 mt-1">Слов</p>
                                     </div>
 
