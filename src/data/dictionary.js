@@ -3,7 +3,7 @@ const dictionary = [
   {
     id: 1,
     word: "Коран",
-    translation: "Quron",
+    translation: "Qur'on",
     image: "",
     definition: "Diniy kitob",
     lang: "uz"
