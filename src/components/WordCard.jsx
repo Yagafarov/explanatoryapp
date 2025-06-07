@@ -19,7 +19,7 @@ const WordCard = ({ word, translation, image, note, definition, lang }) => {
     <div className="relative bg-gradient-to-br from-white via-neutral-50 to-gray-100 rounded-3xl shadow-xl hover:shadow-2xl transform hover:scale-[1.03] transition-all duration-300 ease-in-out overflow-hidden">
       <div className="w-full h-52 bg-white flex items-center justify-center overflow-hidden">
         <img
-          src={image}
+          src={image || flags[lang] || `https://placehold.co/600x400/fff/234`}
           alt={word}
           loading="eager"
           onError={(e) => {
