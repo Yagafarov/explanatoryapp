@@ -10,7 +10,7 @@ const flags = {
 
 const WordCard = ({ word, translation, image, note, definition, lang }) => {
   const speak = () => {
-    const utterance = new SpeechSynthesisUtterance(word);
+    const utterance = new SpeechSynthesisUtterance(lang === 'uz' ? translation : word);
     utterance.lang = lang; // Tilda talaffuz qilish
     window.speechSynthesis.speak(utterance);
   };
