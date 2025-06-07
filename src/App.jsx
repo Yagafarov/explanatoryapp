@@ -5,24 +5,34 @@ import WordList from '../src/components/WordList';
 import SearchBar from '../src/components/SearchBar';
 
 const App = () => {
-  const [query, setQuery] = useState("");
+    const [query, setQuery] = useState("");
+    const [langFilter, setLangFilter] = useState("")
 
-  const filteredWords = dictionary.filter((item) =>
-    item.word.toLowerCase().includes(query.toLowerCase()) ||
-    item.translation.toLowerCase().includes(query.toLowerCase())
-  );
+    const filteredWords = dictionary.filter((item) =>
+        (langFilter === "" || item.lang === langFilter) &&
+        (
+            item.word.toLowerCase().includes(query.toLowerCase()) ||
+            item.translation.toLowerCase().includes(query.toLowerCase())
+        )
+    );
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-white to-green-100 p-6">
-      <h1 className="text-5xl font-extrabold text-center text-primary drop-shadow-sm mb-8">
-        Ruscha-O'zbekcha Lug'at
-      </h1>
-      <div className="max-w-3xl mx-auto">
-        <SearchBar query={query} setQuery={setQuery} />
-        <WordList words={filteredWords} />
-      </div>
-    </div>
-  );
+    return (
+        <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-white to-green-100 p-6">
+            <h1 className="text-xl font-extrabold text-center text-primary drop-shadow-sm mb-8">
+                www.anodra.uz
+            </h1>
+            <div className="max-w-7xl mx-auto">
+                <SearchBar
+                    query={query}
+                    setQuery={setQuery}
+                    langFilter={langFilter}
+                    setLangFilter={setLangFilter}
+                />
+
+                <WordList words={filteredWords} />
+            </div>
+        </div>
+    );
 };
 
 export default App;
