@@ -104,14 +104,14 @@ const App = () => {
                                             className="w-18 h-18 rounded-full object-cover border-2 border-indigo-200"
                                         />
                                         <div>
-                                            <h4 className="font-bold text-gray-900">Йорбек</h4>
-                                            <p className="text-gray-700">Русского языка как иностранного</p>
+                                            <h4 className="font-bold text-gray-900">Боймуродов Ёрбек Омонович</h4>
+                                            <p className="text-gray-700">Русский язык как иностранный ФилФ, <a className='text-indigo-600' href="https://tsu.ru">ТГУ</a> </p>
                                             <div className="mt-2">
                                                 <a
-                                                    href="mailto:yorbek@gmail.com"
+                                                    href="mailto:yorbek1258@gmail.com"
                                                     className="text-sm text-indigo-600 hover:underline"
                                                 >
-                                                    📧 yorbek@gmail.com
+                                                    📧 yorbek1258@gmail.com
                                                 </a>
                                             </div>
                                         </div>
