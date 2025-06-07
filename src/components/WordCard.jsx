@@ -1,10 +1,17 @@
 import React from "react";
 import { Volume2 } from "lucide-react"; // npm i lucide-react
 
-const WordCard = ({ word, translation, image, note, definition }) => {
+const flags = {
+  ru: "https://flagcdn.com/ru.svg", // Rossiya bayrog'i
+  en: "https://flagcdn.com/us.svg", // Amerika bayrog'i
+  uz: "https://flagcdn.com/uz.svg", // O'zbekiston bayrog'i
+  // Qo'shimcha tillar va bayroqlarni qo'shishingiz mumkin
+};
+
+const WordCard = ({ word, translation, image, note, definition, lang }) => {
   const speak = () => {
     const utterance = new SpeechSynthesisUtterance(word);
-    utterance.lang = "ru-RU";
+    utterance.lang = lang; // Tilda talaffuz qilish
     window.speechSynthesis.speak(utterance);
   };
 
@@ -14,10 +21,11 @@ const WordCard = ({ word, translation, image, note, definition }) => {
         <img
           src={image}
           alt={word}
-          loading="eager" // Tezroq yuklash uchun
+          loading="eager"
           onError={(e) => {
             e.target.onerror = null; // prevent infinite loop if placeholder also fails
-            e.target.src = `https://placehold.co/600x400/fff/234`;
+            // Bayroqni ko'rsatish
+            e.target.src = flags[lang] || `https://placehold.co/600x400/fff/234`;
           }}
           className="object-contain h-full max-w-full"
         />
@@ -25,7 +33,16 @@ const WordCard = ({ word, translation, image, note, definition }) => {
 
       <div className="p-6 space-y-2">
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold text-gray-900">{word}</h2>
+          <div className="flex items-center">
+            {lang && flags[lang] && (
+              <img
+                src={flags[lang]}
+                alt={`${lang} flag`}
+                className="w-6 h-6 mr-2"
+              />
+            )}
+            <h2 className="text-2xl font-bold text-gray-900">{word}</h2>
+          </div>
           <button
             onClick={speak}
             aria-label="Listen to pronunciation"
@@ -39,12 +56,6 @@ const WordCard = ({ word, translation, image, note, definition }) => {
 
         {definition && (
           <p className="text-sm text-gray-700 leading-snug">{definition}</p>
-        )}
-
-        {note && (
-          <p className="text-xs text-gray-500 italic border-l-4 border-gray-300 pl-3">
-            {note}
-          </p>
         )}
       </div>
     </div>
