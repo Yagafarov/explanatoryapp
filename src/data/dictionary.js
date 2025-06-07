@@ -4,7 +4,7 @@ const dictionary = [
     id: 1,
     word: "Qur'on",
     translation: "Коран",
-    image: "",
+    image: "https://img.freepik.com/premium-vector/al-quran-illustration-vector-design-islamic-new-year-event_548646-1531.jpg",
     definition: "Религиозная книга",
     lang: "uz"
   },
@@ -12,7 +12,7 @@ const dictionary = [
     id: 2,
     word: "Navro’z",
     translation: "Навруз",
-    image: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdvS4wLj57VfgT5DlcGxejboJOYDsNX0ygXg&s",
     definition: "Весенний праздник",
     lang: "uz"
   },
@@ -20,7 +20,7 @@ const dictionary = [
     id: 3,
     word: "Sumalak",
     translation: "Сумаляк",
-    image: "",
+    image: "https://t4.ftcdn.net/jpg/01/95/09/47/360_F_195094715_G4sVIsxt92VGVxDAJH3c0yRO4ean3OmA.jpg",
     definition: "Весеннее блюдо",
     lang: "uz"
   },
@@ -28,7 +28,7 @@ const dictionary = [
     id: 4,
     word: "Mahalla",
     translation: "Махалля",
-    image: "",
+    image: "https://uzbek-travel.com/images/uz/Traditions/Makhalla/mahalla_8.jpg",
     definition: "Традиционная община (часть города)",
     lang: "uz"
   },
@@ -36,7 +36,7 @@ const dictionary = [
     id: 5,
     word: "Rahmat",
     translation: "Спасибо",
-    image: "",
+    image: "https://img.freepik.com/free-vector/thank-you-concept-illustration_114360-14867.jpg?semt=ais_hybrid&w=740",
     definition: "Выражать благодарность",
     lang: "uz"
   },
@@ -44,7 +44,7 @@ const dictionary = [
     id: 6,
     word: "Qovun sayli",
     translation: "Праздник дынь",
-    image: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVf_cay-ZaqGbMbJf0GTbb_4u0KAlO2Vj_Ew&s",
     definition: "Праздник урожая",
     lang: "uz"
   },
@@ -52,7 +52,7 @@ const dictionary = [
     id: 7,
     word: "Karnay",
     translation: "Карнай",
-    image: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl1GelI7A18M-sjBr4opCTGJI9wuOtjYgHe-zbuX0OcRPKfa99xHPERxmgJeUUojpapNs&usqp=CAU",
     definition: "Народный музыкальный инструмент",
     lang: "uz"
   },
@@ -60,7 +60,7 @@ const dictionary = [
     id: 8,
     word: "Surnay",
     translation: "Сурнай",
-    image: "",
+    image: "https://i.ytimg.com/vi/Basi3Egz4Q4/maxresdefault.jpg",
     definition: "Народный музыкальный инструмент",
     lang: "uz"
   },
@@ -68,7 +68,7 @@ const dictionary = [
     id: 9,
     word: "Doira",
     translation: "Дойра",
-    image: "",
+    image: "https://i.ytimg.com/vi/w3q5E1DOJP4/maxresdefault.jpg",
     definition: "Народный музыкальный инструмент",
     lang: "uz"
   },
@@ -76,7 +76,7 @@ const dictionary = [
     id: 10,
     word: "Choynak",
     translation: "Чайник",
-    image: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvSo7vnUuuH6dVKdKgrmo_VmSOe8ZhN1Oqpg&s",
     definition: "Изделие (сосуд)",
     lang: "uz"
   },
@@ -84,7 +84,7 @@ const dictionary = [
     id: 11,
     word: "Qishloq",
     translation: "Кишлак",
-    image: "",
+    image: "https://www.gazeta.uz/media/img/2023/02/YpLA4716775890069716_b.jpg",
     definition: "Традиционная община (часть района)",
     lang: "uz"
   },
@@ -92,7 +92,7 @@ const dictionary = [
     id: 12,
     word: "Dombira",
     translation: "Домбра",
-    image: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYP5bkE5aFqQhBF02uk7nHIa5cXViZKQDACQ&s",
     definition: "Народный музыкальный инструмент",
     lang: "uz"
   },
@@ -100,7 +100,7 @@ const dictionary = [
     id: 13,
     word: "Dutor",
     translation: "Дутар",
-    image: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfVLXO6iW4owahlnuk7Cs00O0yUxthRr4YuQ&s",
     definition: "Народный музыкальный инструмент",
     lang: "uz"
   },
@@ -108,7 +108,7 @@ const dictionary = [
     id: 14,
     word: "Madrasa",
     translation: "Медресе",
-    image: "",
+    image: "https://img1.advisor.travel/1314x680px-Ulugbek_madrasasi_13.jpg",
     definition: "Учреждение",
     lang: "uz"
   },
@@ -116,7 +116,7 @@ const dictionary = [
     id: 15,
     word: "Osh",
     translation: "Плов",
-    image: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpk9wGpdXHiFxm_Za9lKih-g9es3zFdTFukw&s",
     definition: "Национальное блюдо",
     lang: "uz"
   },
@@ -124,7 +124,7 @@ const dictionary = [
     id: 16,
     word: "Samovar",
     translation: "Самовар",
-    image: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrCYbV7srzWz2Y_zSUmiDGubB4YpGZwUNh9g&s",
     definition: "Устройство для кипячения воды и чая.",
     lang: "uz"
   },
@@ -132,7 +132,7 @@ const dictionary = [
     id: 17,
     word: "Somsa",
     translation: "Самса",
-    image: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzUHyBaCOsm4l9COx73kcYVBqLE3QRTPCSJQ&s",
     definition: "Национальное блюдо",
     lang: "uz"
   },
