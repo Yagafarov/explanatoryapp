@@ -105,7 +105,7 @@ const App = () => {
                                         />
                                         <div>
                                             <h4 className="font-bold text-gray-900">Боймуродов Ёрбек Омонович</h4>
-                                            <p className="text-gray-700">Русский язык как иностранный ФилФ, <a className='text-indigo-600' href="https://tsu.ru">ТГУ</a> </p>
+                                            <p className="text-gray-700">Русский язык как иностранный Филф, <a className='text-indigo-600' href="https://tsu.ru">ТГУ</a> </p>
                                             <div className="mt-2">
                                                 <a
                                                     href="mailto:yorbek1258@gmail.com"
